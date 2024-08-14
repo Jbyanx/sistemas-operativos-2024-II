@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+    int size = 0;
+    printf("what is the vector size?\n");
+    scanf("%d", &size);
+    int vector[size]; //creamos el vector
+
+    printf("Please enter %d numbers to fill the vector: ", size);
+
+    for (int i = 0; i <size; i++) {
+        scanf("%d", &vector[i]); //guardamos los datos en el vector
+    }
+
+    printf("Inverted vector: \n");
+
+    for (int i = size - 1; i >= 0; i--) {
+        printf("%d ", vector[i]); //imprimimos revertido
+    }
+    return 0;
+}
